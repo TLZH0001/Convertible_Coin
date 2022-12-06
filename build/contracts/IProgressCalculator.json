@@ -1,0 +1,243 @@
+{
+  "contractName": "IProgressCalculator",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "classId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonceId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getProgress",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "progressAchieved",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "progressRemaining",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"classId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nonceId\",\"type\":\"uint256\"}],\"name\":\"getProgress\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"progressAchieved\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"progressRemaining\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IProgressCalculator.sol\":\"IProgressCalculator\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IProgressCalculator.sol\":{\"keccak256\":\"0x5d7495d75fffe6315d55282c899981a26e67075bff927e8274494d5868ce2b37\",\"license\":\"apache 2.0\",\"urls\":[\"bzz-raw://7c79a66d34aaa119a0b3de0c8b6bf588857947d0c2f90e466f8d7facdb6a50cc\",\"dweb:/ipfs/QmQAbFwC9SvopSkoiNTAPC1EA8HkgSfX2tKjX26unRia18\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\r\n\r\n// SPDX-License-Identifier: apache 2.0\r\n/*\r\n    Copyright 2022 Debond Protocol <info@debond.org>\r\n    Licensed under the Apache License, Version 2.0 (the \"License\");\r\n    you may not use this file except in compliance with the License.\r\n    You may obtain a copy of the License at\r\n    http://www.apache.org/licenses/LICENSE-2.0\r\n    Unless required by applicable law or agreed to in writing, software\r\n    distributed under the License is distributed on an \"AS IS\" BASIS,\r\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n    See the License for the specific language governing permissions and\r\n    limitations under the License.\r\n*/\r\n\r\ninterface IProgressCalculator {\r\n\r\n    function getProgress(uint256 classId, uint256 nonceId) external view returns (uint256 progressAchieved, uint256 progressRemaining);\r\n}\r\n",
+  "sourcePath": "C:\\Users\\temp\\Documents\\Debond-ERC3475\\contracts\\interfaces\\IProgressCalculator.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IProgressCalculator.sol",
+    "exportedSymbols": {
+      "IProgressCalculator": [
+        2450
+      ]
+    },
+    "id": 2451,
+    "license": "apache 2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2438,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:7"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IProgressCalculator",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2450,
+        "linearizedBaseContracts": [
+          2450
+        ],
+        "name": "IProgressCalculator",
+        "nameLocation": "704:19:7",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "572e5ef2",
+            "id": 2449,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getProgress",
+            "nameLocation": "742:11:7",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2443,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2440,
+                  "mutability": "mutable",
+                  "name": "classId",
+                  "nameLocation": "762:7:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2449,
+                  "src": "754:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2439,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "754:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2442,
+                  "mutability": "mutable",
+                  "name": "nonceId",
+                  "nameLocation": "779:7:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2449,
+                  "src": "771:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2441,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "771:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "753:34:7"
+            },
+            "returnParameters": {
+              "id": 2448,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2445,
+                  "mutability": "mutable",
+                  "name": "progressAchieved",
+                  "nameLocation": "819:16:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2449,
+                  "src": "811:24:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2444,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "811:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2447,
+                  "mutability": "mutable",
+                  "name": "progressRemaining",
+                  "nameLocation": "845:17:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2449,
+                  "src": "837:25:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2446,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "837:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "810:53:7"
+            },
+            "scope": 2450,
+            "src": "733:131:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2451,
+        "src": "694:173:7",
+        "usedErrors": []
+      }
+    ],
+    "src": "0:869:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2022-12-06T01:05:52.758Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

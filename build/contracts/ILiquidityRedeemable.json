@@ -1,0 +1,226 @@
+{
+  "contractName": "ILiquidityRedeemable",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "classId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonceId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IERC3475.Transaction[]",
+          "name": "transactions",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "redeemLiquidity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"uint256\",\"name\":\"classId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nonceId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"internalType\":\"struct IERC3475.Transaction[]\",\"name\":\"transactions\",\"type\":\"tuple[]\"}],\"name\":\"redeemLiquidity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ILiquidityRedeemable.sol\":\"ILiquidityRedeemable\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"erc3475/IERC3475.sol\":{\"keccak256\":\"0xded41ea249c9d670bbd8d09df0b3bffae1548efd0a61d5c4e8f54a09165861cb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4f924f1565f70168c9c8ea3a5aee6dc30676d99aedefd42b389d8ab40db2b8bc\",\"dweb:/ipfs/QmbNW5fm9n7p4TEhz24CTzfSahb9CfYYWmRyCZ9LuukuhR\"]},\"project:/contracts/interfaces/ILiquidityRedeemable.sol\":{\"keccak256\":\"0x668bb31b24cf075ef0f4cfaaaa8eee2f77379d9de0a7309004a3c1fcbcbdf0eb\",\"license\":\"apache 2.0\",\"urls\":[\"bzz-raw://3caa4367e6c598b02e94eb011e4ac6d2861a6f942ce59b0e0b5a848fcd17e728\",\"dweb:/ipfs/QmZf6JktuhDNzdR7Fbz4icUGEfoRsPJmrToWjouj2iYvDv\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.8.0;\r\n\r\n// SPDX-License-Identifier: apache 2.0\r\n/*\r\n    Copyright 2022 Debond Protocol <info@debond.org>\r\n    Licensed under the Apache License, Version 2.0 (the \"License\");\r\n    you may not use this file except in compliance with the License.\r\n    You may obtain a copy of the License at\r\n    http://www.apache.org/licenses/LICENSE-2.0\r\n    Unless required by applicable law or agreed to in writing, software\r\n    distributed under the License is distributed on an \"AS IS\" BASIS,\r\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n    See the License for the specific language governing permissions and\r\n    limitations under the License.\r\n*/\r\n\r\nimport \"erc3475/IERC3475.sol\";\r\n\r\ninterface ILiquidityRedeemable {\r\n\r\n    function redeemLiquidity(address to, IERC3475.Transaction[] calldata transactions) external;\r\n}\r\n",
+  "sourcePath": "C:\\Users\\temp\\Documents\\Debond-ERC3475\\contracts\\interfaces\\ILiquidityRedeemable.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ILiquidityRedeemable.sol",
+    "exportedSymbols": {
+      "IERC3475": [
+        390
+      ],
+      "ILiquidityRedeemable": [
+        2436
+      ]
+    },
+    "id": 2437,
+    "license": "apache 2.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2425,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:6"
+      },
+      {
+        "absolutePath": "erc3475/IERC3475.sol",
+        "file": "erc3475/IERC3475.sol",
+        "id": 2426,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 2437,
+        "sourceUnit": 391,
+        "src": "694:30:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ILiquidityRedeemable",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2436,
+        "linearizedBaseContracts": [
+          2436
+        ],
+        "name": "ILiquidityRedeemable",
+        "nameLocation": "738:20:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "d5746868",
+            "id": 2435,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "redeemLiquidity",
+            "nameLocation": "777:15:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2433,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2428,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "801:2:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2435,
+                  "src": "793:10:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 2427,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "793:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2432,
+                  "mutability": "mutable",
+                  "name": "transactions",
+                  "nameLocation": "837:12:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2435,
+                  "src": "805:44:6",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Transaction_$130_calldata_ptr_$dyn_calldata_ptr",
+                    "typeString": "struct IERC3475.Transaction[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 2430,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 2429,
+                        "name": "IERC3475.Transaction",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 130,
+                        "src": "805:20:6"
+                      },
+                      "referencedDeclaration": 130,
+                      "src": "805:20:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Transaction_$130_storage_ptr",
+                        "typeString": "struct IERC3475.Transaction"
+                      }
+                    },
+                    "id": 2431,
+                    "nodeType": "ArrayTypeName",
+                    "src": "805:22:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Transaction_$130_storage_$dyn_storage_ptr",
+                      "typeString": "struct IERC3475.Transaction[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "792:58:6"
+            },
+            "returnParameters": {
+              "id": 2434,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "859:0:6"
+            },
+            "scope": 2436,
+            "src": "768:92:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2437,
+        "src": "728:135:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "0:865:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2022-12-06T01:05:52.757Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
